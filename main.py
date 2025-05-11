@@ -74,13 +74,12 @@ while game:
 
         if ball.rect.x < 0:
             finish = False
-            window.blit(font.render('LEFT LOSE', True, (180, 0, 0)), 200)
+            window.blit(font.render('LEFT LOSE', True, (180, 0, 0)), (200, 200))
 
         if ball.rect.x > win_w:
             finish = False
-            window.blit(font.render('RIGHT LOSE', True, (180, 0, 0)), 200)
+            window.blit(font.render('RIGHT LOSE', True, (180, 0, 0)), (200, 200))
             
-
         ball.reset()
         rocket1.reset()
         rocket2.reset()
